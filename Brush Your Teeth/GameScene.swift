@@ -28,6 +28,7 @@ class GameScene: SKScene {
         self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
         if let spinnyNode = self.spinnyNode {
             spinnyNode.lineWidth = 2.5
+            spinnyNode.alpha = 0.3
             
             spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
@@ -61,10 +62,6 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if let label = self.label {
-//            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-//        }
-        
         if let touch = touches.first {
             let location = touch.location(in: self)
             
