@@ -16,6 +16,8 @@ class GameScene: SKScene {
     private var lastUpdateTime : TimeInterval = 0
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    private var rock : SKSpriteNode?
+    private var currentNode : SKNode?
     
     override func sceneDidLoad() {
         self.lastUpdateTime = 0
@@ -26,6 +28,8 @@ class GameScene: SKScene {
             label.alpha = 0.0
             label.run(SKAction.fadeIn(withDuration: 2.0))
         }
+        
+        self.rock = self.childNode(withName: "//rock") as? SKSpriteNode
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -69,19 +73,36 @@ class GameScene: SKScene {
             label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
         }
         
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            
+            let touchedNodes = self.nodes(at: location)
+            for node in touchedNodes.reversed() {
+                if node.name == "rock" {
+                    self.currentNode = node
+                }
+            }
+        }
+        
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
+        if let touch = touches.first, let node = self.currentNode {
+            let touchLocation = touch.location(in: self)
+            node.position = touchLocation
+        }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        self.currentNode = nil
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        self.currentNode = nil
     }
     
     
