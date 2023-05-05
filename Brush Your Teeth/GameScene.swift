@@ -33,6 +33,38 @@ class GameScene: SKScene {
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
         }
+        
+        run(SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.run(self.addGerm),
+                SKAction.wait(forDuration: 1.0)
+            ])
+        ))
+        
+    }
+    
+    func random(min: CGFloat, max: CGFloat) -> CGFloat {
+      return CGFloat(Float(arc4random()) / 0xFFFFFFFF) * (max - min) + min
+    }
+    
+    func addGerm() {
+        let germ = SKLabelNode()
+        germ.text = "🦠"
+        germ.fontSize = 20
+        germ.horizontalAlignmentMode = .center
+        germ.verticalAlignmentMode = .center
+        
+        let x = size.width/2 + 20
+        let y = self.random(min: -(size.height/2 - 10), max: size.height/2 - 10)
+        let speed = self.random(min: 2.0, max: 4.0)
+        germ.position = CGPoint(x: -x, y: y)
+        germ.zPosition = 5
+        self.addChild(germ)
+        
+        germ.run(SKAction.sequence([
+            SKAction.move(to: CGPoint(x: x, y: y), duration: speed),
+            SKAction.removeFromParent()
+        ]))
     }
     
     func touchDown(atPoint pos : CGPoint) {
