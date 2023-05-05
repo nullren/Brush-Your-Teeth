@@ -71,6 +71,7 @@ class GameScene: SKScene {
             let touchedNodes = self.nodes(at: location)
             for node in touchedNodes.reversed() {
                 if node.name == "rock" {
+                    node.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
                     self.currentNode = node
                 }
             }
