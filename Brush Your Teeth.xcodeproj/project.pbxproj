@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51C66C32A03201B00399FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C66C22A03201B00399FA7 /* AppDelegate.swift */; };
+		A51C66C52A03201B00399FA7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A51C66C42A03201B00399FA7 /* GameScene.sks */; };
+		A51C66C72A03201B00399FA7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A51C66C62A03201B00399FA7 /* Actions.sks */; };
+		A51C66C92A03201B00399FA7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C66C82A03201B00399FA7 /* GameScene.swift */; };
+		A51C66CB2A03201B00399FA7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C66CA2A03201B00399FA7 /* GameViewController.swift */; };
+		A51C66CE2A03201B00399FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51C66CC2A03201B00399FA7 /* Main.storyboard */; };
+		A51C66D02A03201C00399FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51C66CF2A03201C00399FA7 /* Assets.xcassets */; };
+		A51C66D32A03201C00399FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51C66D12A03201C00399FA7 /* LaunchScreen.storyboard */; };
+		A51C66DD2A03201C00399FA7 /* Brush_Your_TeethTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C66DC2A03201C00399FA7 /* Brush_Your_TeethTests.swift */; };
+		A51C66E72A03201C00399FA7 /* Brush_Your_TeethUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C66E62A03201C00399FA7 /* Brush_Your_TeethUITests.swift */; };
+		A51C66E92A03201C00399FA7 /* Brush_Your_TeethUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C66E82A03201C00399FA7 /* Brush_Your_TeethUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51C66D92A03201C00399FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51C66B72A03201B00399FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51C66BE2A03201B00399FA7;
+			remoteInfo = "Brush Your Teeth";
+		};
+		A51C66E32A03201C00399FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51C66B72A03201B00399FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51C66BE2A03201B00399FA7;
+			remoteInfo = "Brush Your Teeth";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A51C66BF2A03201B00399FA7 /* Brush Your Teeth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brush Your Teeth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C66C22A03201B00399FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A51C66C42A03201B00399FA7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A51C66C62A03201B00399FA7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		A51C66C82A03201B00399FA7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A51C66CA2A03201B00399FA7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A51C66CD2A03201B00399FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A51C66CF2A03201C00399FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51C66D22A03201C00399FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A51C66D82A03201C00399FA7 /* Brush Your TeethTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brush Your TeethTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C66DC2A03201C00399FA7 /* Brush_Your_TeethTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brush_Your_TeethTests.swift; sourceTree = "<group>"; };
+		A51C66E22A03201C00399FA7 /* Brush Your TeethUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brush Your TeethUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51C66E62A03201C00399FA7 /* Brush_Your_TeethUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brush_Your_TeethUITests.swift; sourceTree = "<group>"; };
+		A51C66E82A03201C00399FA7 /* Brush_Your_TeethUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brush_Your_TeethUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51C66BC2A03201B00399FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C66D52A03201C00399FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C66DF2A03201C00399FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51C66B62A03201B00399FA7 = {
+			isa = PBXGroup;
+			children = (
+				A51C66C12A03201B00399FA7 /* Brush Your Teeth */,
+				A51C66DB2A03201C00399FA7 /* Brush Your TeethTests */,
+				A51C66E52A03201C00399FA7 /* Brush Your TeethUITests */,
+				A51C66C02A03201B00399FA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A51C66C02A03201B00399FA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51C66BF2A03201B00399FA7 /* Brush Your Teeth.app */,
+				A51C66D82A03201C00399FA7 /* Brush Your TeethTests.xctest */,
+				A51C66E22A03201C00399FA7 /* Brush Your TeethUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A51C66C12A03201B00399FA7 /* Brush Your Teeth */ = {
+			isa = PBXGroup;
+			children = (
+				A51C66C22A03201B00399FA7 /* AppDelegate.swift */,
+				A51C66C42A03201B00399FA7 /* GameScene.sks */,
+				A51C66C62A03201B00399FA7 /* Actions.sks */,
+				A51C66C82A03201B00399FA7 /* GameScene.swift */,
+				A51C66CA2A03201B00399FA7 /* GameViewController.swift */,
+				A51C66CC2A03201B00399FA7 /* Main.storyboard */,
+				A51C66CF2A03201C00399FA7 /* Assets.xcassets */,
+				A51C66D12A03201C00399FA7 /* LaunchScreen.storyboard */,
+			);
+			path = "Brush Your Teeth";
+			sourceTree = "<group>";
+		};
+		A51C66DB2A03201C00399FA7 /* Brush Your TeethTests */ = {
+			isa = PBXGroup;
+			children = (
+				A51C66DC2A03201C00399FA7 /* Brush_Your_TeethTests.swift */,
+			);
+			path = "Brush Your TeethTests";
+			sourceTree = "<group>";
+		};
+		A51C66E52A03201C00399FA7 /* Brush Your TeethUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A51C66E62A03201C00399FA7 /* Brush_Your_TeethUITests.swift */,
+				A51C66E82A03201C00399FA7 /* Brush_Your_TeethUITestsLaunchTests.swift */,
+			);
+			path = "Brush Your TeethUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51C66BE2A03201B00399FA7 /* Brush Your Teeth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51C66EC2A03201C00399FA7 /* Build configuration list for PBXNativeTarget "Brush Your Teeth" */;
+			buildPhases = (
+				A51C66BB2A03201B00399FA7 /* Sources */,
+				A51C66BC2A03201B00399FA7 /* Frameworks */,
+				A51C66BD2A03201B00399FA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brush Your Teeth";
+			productName = "Brush Your Teeth";
+			productReference = A51C66BF2A03201B00399FA7 /* Brush Your Teeth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51C66D72A03201C00399FA7 /* Brush Your TeethTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51C66EF2A03201C00399FA7 /* Build configuration list for PBXNativeTarget "Brush Your TeethTests" */;
+			buildPhases = (
+				A51C66D42A03201C00399FA7 /* Sources */,
+				A51C66D52A03201C00399FA7 /* Frameworks */,
+				A51C66D62A03201C00399FA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51C66DA2A03201C00399FA7 /* PBXTargetDependency */,
+			);
+			name = "Brush Your TeethTests";
+			productName = "Brush Your TeethTests";
+			productReference = A51C66D82A03201C00399FA7 /* Brush Your TeethTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A51C66E12A03201C00399FA7 /* Brush Your TeethUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51C66F22A03201C00399FA7 /* Build configuration list for PBXNativeTarget "Brush Your TeethUITests" */;
+			buildPhases = (
+				A51C66DE2A03201C00399FA7 /* Sources */,
+				A51C66DF2A03201C00399FA7 /* Frameworks */,
+				A51C66E02A03201C00399FA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51C66E42A03201C00399FA7 /* PBXTargetDependency */,
+			);
+			name = "Brush Your TeethUITests";
+			productName = "Brush Your TeethUITests";
+			productReference = A51C66E22A03201C00399FA7 /* Brush Your TeethUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A51C66B72A03201B00399FA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A51C66BE2A03201B00399FA7 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A51C66D72A03201C00399FA7 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A51C66BE2A03201B00399FA7;
+					};
+					A51C66E12A03201C00399FA7 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A51C66BE2A03201B00399FA7;
+					};
+				};
+			};
+			buildConfigurationList = A51C66BA2A03201B00399FA7 /* Build configuration list for PBXProject "Brush Your Teeth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A51C66B62A03201B00399FA7;
+			productRefGroup = A51C66C02A03201B00399FA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A51C66BE2A03201B00399FA7 /* Brush Your Teeth */,
+				A51C66D72A03201C00399FA7 /* Brush Your TeethTests */,
+				A51C66E12A03201C00399FA7 /* Brush Your TeethUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51C66BD2A03201B00399FA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C66CE2A03201B00399FA7 /* Main.storyboard in Resources */,
+				A51C66C52A03201B00399FA7 /* GameScene.sks in Resources */,
+				A51C66D02A03201C00399FA7 /* Assets.xcassets in Resources */,
+				A51C66D32A03201C00399FA7 /* LaunchScreen.storyboard in Resources */,
+				A51C66C72A03201B00399FA7 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C66D62A03201C00399FA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C66E02A03201C00399FA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51C66BB2A03201B00399FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C66C92A03201B00399FA7 /* GameScene.swift in Sources */,
+				A51C66CB2A03201B00399FA7 /* GameViewController.swift in Sources */,
+				A51C66C32A03201B00399FA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C66D42A03201C00399FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C66DD2A03201C00399FA7 /* Brush_Your_TeethTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51C66DE2A03201C00399FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C66E72A03201C00399FA7 /* Brush_Your_TeethUITests.swift in Sources */,
+				A51C66E92A03201C00399FA7 /* Brush_Your_TeethUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51C66DA2A03201C00399FA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51C66BE2A03201B00399FA7 /* Brush Your Teeth */;
+			targetProxy = A51C66D92A03201C00399FA7 /* PBXContainerItemProxy */;
+		};
+		A51C66E42A03201C00399FA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51C66BE2A03201B00399FA7 /* Brush Your Teeth */;
+			targetProxy = A51C66E32A03201C00399FA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A51C66CC2A03201B00399FA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51C66CD2A03201B00399FA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A51C66D12A03201C00399FA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51C66D22A03201C00399FA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51C66EA2A03201C00399FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A51C66EB2A03201C00399FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A51C66ED2A03201C00399FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z22YU3EY3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nullren.Brush-Your-Teeth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51C66EE2A03201C00399FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z22YU3EY3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nullren.Brush-Your-Teeth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A51C66F02A03201C00399FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z22YU3EY3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nullren.Brush-Your-TeethTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brush Your Teeth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brush Your Teeth";
+			};
+			name = Debug;
+		};
+		A51C66F12A03201C00399FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z22YU3EY3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nullren.Brush-Your-TeethTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brush Your Teeth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brush Your Teeth";
+			};
+			name = Release;
+		};
+		A51C66F32A03201C00399FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z22YU3EY3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nullren.Brush-Your-TeethUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brush Your Teeth";
+			};
+			name = Debug;
+		};
+		A51C66F42A03201C00399FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z22YU3EY3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nullren.Brush-Your-TeethUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brush Your Teeth";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51C66BA2A03201B00399FA7 /* Build configuration list for PBXProject "Brush Your Teeth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C66EA2A03201C00399FA7 /* Debug */,
+				A51C66EB2A03201C00399FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51C66EC2A03201C00399FA7 /* Build configuration list for PBXNativeTarget "Brush Your Teeth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C66ED2A03201C00399FA7 /* Debug */,
+				A51C66EE2A03201C00399FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51C66EF2A03201C00399FA7 /* Build configuration list for PBXNativeTarget "Brush Your TeethTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C66F02A03201C00399FA7 /* Debug */,
+				A51C66F12A03201C00399FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51C66F22A03201C00399FA7 /* Build configuration list for PBXNativeTarget "Brush Your TeethUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51C66F32A03201C00399FA7 /* Debug */,
+				A51C66F42A03201C00399FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A51C66B72A03201B00399FA7 /* Project object */;
+}
