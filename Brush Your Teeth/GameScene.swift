@@ -8,6 +8,13 @@
 import SpriteKit
 import GameplayKit
 
+struct PhysicsCategory {
+    static let none: UInt32 = 0
+    static let all: UInt32 = UInt32.max
+    static let toothbrush: UInt32 = 0b1
+    static let germ: UInt32 = 0b10
+}
+
 class GameScene: SKScene {
     
     var entities = [GKEntity]()
@@ -41,6 +48,9 @@ class GameScene: SKScene {
             ])
         ))
         
+        physicsWorld.gravity = .zero
+        physicsWorld.contactDelegate = self
+        
     }
     
     func random(min: CGFloat, max: CGFloat) -> CGFloat {
@@ -65,6 +75,12 @@ class GameScene: SKScene {
             SKAction.move(to: CGPoint(x: x, y: y), duration: speed),
             SKAction.removeFromParent()
         ]))
+        
+        germ.physicsBody = SKPhysicsBody(circleOfRadius: germ.fontSize)
+        germ.physicsBody?.isDynamic = true // 2
+        germ.physicsBody?.categoryBitMask = PhysicsCategory.germ // 3
+        germ.physicsBody?.contactTestBitMask = PhysicsCategory.toothbrush // 4
+        germ.physicsBody?.collisionBitMask = PhysicsCategory.none // 5
     }
     
     func touchDown(atPoint pos : CGPoint) {
@@ -100,6 +116,12 @@ class GameScene: SKScene {
                 if node.name == "toothbrush" {
                     node.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
                     self.toothbrush = node
+                    self.toothbrush?.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 10, height: 250))
+                    self.toothbrush?.physicsBody?.isDynamic = true
+                    self.toothbrush?.physicsBody?.categoryBitMask = PhysicsCategory.toothbrush
+                    self.toothbrush?.physicsBody?.contactTestBitMask = PhysicsCategory.germ
+                    self.toothbrush?.physicsBody?.collisionBitMask = PhysicsCategory.none
+                    self.toothbrush?.physicsBody?.usesPreciseCollisionDetection = true
                 }
             }
         }
@@ -117,11 +139,13 @@ class GameScene: SKScene {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        self.toothbrush?.physicsBody = nil
         self.toothbrush = nil
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        self.toothbrush?.physicsBody = nil
         self.toothbrush = nil
     }
     
@@ -144,4 +168,34 @@ class GameScene: SKScene {
         
         self.lastUpdateTime = currentTime
     }
+    func toothbrushDidCollideWithGerm(toothbrush: SKLabelNode, germ: SKLabelNode) {
+        print("Hit")
+        germ.removeFromParent()
+    }
+}
+
+extension GameScene: SKPhysicsContactDelegate {
+    func didBegin(_ contact: SKPhysicsContact) {
+      // 1
+      var firstBody: SKPhysicsBody
+      var secondBody: SKPhysicsBody
+      if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
+        firstBody = contact.bodyA
+        secondBody = contact.bodyB
+      } else {
+        firstBody = contact.bodyB
+        secondBody = contact.bodyA
+      }
+        print(firstBody, secondBody)
+     
+      // 2
+      if ((firstBody.categoryBitMask & PhysicsCategory.toothbrush != 0) &&
+          (secondBody.categoryBitMask & PhysicsCategory.germ != 0)) {
+        if let germ = secondBody.node as? SKLabelNode,
+          let toothbrush = firstBody.node as? SKLabelNode {
+            toothbrushDidCollideWithGerm(toothbrush: toothbrush, germ: germ)
+        }
+      }
+    }
+
 }
